@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.22.48" id="ResourceRegistry"
+             SeparateXMLFiles="false" Package="RESTmodel" ClientType="Generic">
+  <pageMap>
+    <page path="v1_customersvoapi" usageId="v1_oneVueModel_EcouiCustomersVOResources"/>
+    <page path="v1_applicationsvoapi" usageId="v1_oneVueModel_EcouiApplicationsVOResources"/>
+    <page path="v1_appsecurityvoapi" usageId="v1_oneVueModel_EcouiApplicationSecurityVOResources"/>
+    <page path="v1_applicationfieldsvoapi" usageId="v1_oneVueModel_EcouiApplicationFieldsVOResources"/>
+    <page path="v1_appfieldmappingsvoapi" usageId="v1_oneVueModel_EcouiAppFieldMappingsVOResources"/>
+    <page path="v1_configsvoapi" usageId="v1_oneVueEModel_EcouiConfigsVOResources"/>
+  </pageMap>
+  <dataControlUsages>
+    <BC4JDataControl id="oneVueModelDataControl" Package="com.ecoui.model.services"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="oneVueModelLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+    <BC4JDataControl id="oneVueModelDataControl1" Package="com.ecoui.model.services"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="oneVueModelLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+    <BC4JDataControl id="oneVueModelDataControl2" Package="com.ecoui.model.services"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="oneVueModelLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+    <BC4JDataControl id="oneVueModelDataControl3" Package="com.ecoui.model.services"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="oneVueModelLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+    <BC4JDataControl id="oneVueModelDataControl4" Package="com.ecoui.model.services"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="oneVueModelLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+    <BC4JDataControl id="oneVueEModelDataControl" Package="com.ecoui.model.entities"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="oneVueEModelLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+    <BC4JDataControl id="oneVueEModelDataControl1" Package="com.ecoui.model.entities"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="oneVueEModelLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+  <pageDefinitionUsages>
+    <page id="v1_oneVueModel_EcouiCustomersVOResources"
+          path="com.ecoui.model.services.rest.v1.oneVueModel_EcouiCustomersVOResources"/>
+    <page id="v1_oneVueModel_EcouiApplicationsVOResources"
+          path="com.ecoui.model.services.rest.v1.oneVueModel_EcouiApplicationsVOResources"/>
+    <page id="v1_oneVueModel_EcouiApplicationSecurityVOResources"
+          path="com.ecoui.model.services.rest.v1.oneVueModel_EcouiApplicationSecurityVOResources"/>
+    <page id="v1_oneVueModel_EcouiApplicationFieldsVOResources"
+          path="com.ecoui.model.services.rest.v1.oneVueModel_EcouiApplicationFieldsVOResources"/>
+    <page id="v1_oneVueModel_EcouiAppFieldMappingsVOResources"
+          path="com.ecoui.model.services.rest.v1.oneVueModel_EcouiAppFieldMappingsVOResources"/>
+    <page id="v1_oneVueEModel_EcouiConfigsVOResources"
+          path="com.ecoui.model.entities.rest.v1.oneVueEModel_EcouiConfigsVOResources"/>
+  </pageDefinitionUsages>
+</Application>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="oneVueModel"
+  Version="12.2.1.22.48"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="EcouiApplicationsVO1"
+    ViewObjectName="com.ecoui.model.views.EcouiApplicationsVO"/>
+  <ViewUsage
+    Name="EcouiApplicationSecurityVO1"
+    ViewObjectName="com.ecoui.model.views.EcouiApplicationSecurityVO"/>
+  <ViewUsage
+    Name="EcouiApplicationFieldsVO1"
+    ViewObjectName="com.ecoui.model.views.EcouiApplicationFieldsVO"/>
+  <ViewUsage
+    Name="EcouiAppFieldMappingsVO1"
+    ViewObjectName="com.ecoui.model.views.EcouiAppFieldMappingsVO"/>
+</AppModule>

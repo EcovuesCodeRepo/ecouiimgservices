@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.22.48"
+                id="oneVueModel_EcouiCustomersVOResources" Package="com.ecoui.model.services.rest.v1"
+                usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="EcouiCustomersVO1" RangeSize="25" DataControl="oneVueModelDataControl"
+              id="EcouiCustomersVO1Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="EcouiCustomersVO1Iter" id="customersvoapi" AccessorFolder="Always">
+      <ServiceConfiguration EnableRowContextLOV="false"/>
+      <nodeDefinition DefName="com.ecoui.model.views.EcouiCustomersVO" Name="com.ecoui.model.views.EcouiCustomersVO"/>
+    </tree>
+  </bindings>
+</pageDefinition>

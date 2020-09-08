@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="com.ecoui.model.entities.oneVueModel">
+    <AppModuleConfig name="oneVueModelLocal" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="com.ecoui.model.entities.oneVueModel" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ecouiebsdsDS"/>
+      <Security AppModuleJndiName="com.ecoui.model.entities.oneVueModel"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="oneVueModelShared" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="com.ecoui.model.entities.oneVueModel" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ecouiebsdsDS"/>
+      <Security AppModuleJndiName="com.ecoui.model.entities.oneVueModel"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+  <AppModuleConfigBag ApplicationName="com.ecoui.model.services.oneVueModel">
+    <AppModuleConfig name="oneVueModelLocal" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="com.ecoui.model.services.oneVueModel" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ecouidsDS"/>
+      <Security AppModuleJndiName="com.ecoui.model.services.oneVueModel"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="oneVueModelShared" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="com.ecoui.model.services.oneVueModel" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ecouidsDS"/>
+      <Security AppModuleJndiName="com.ecoui.model.services.oneVueModel"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+  <AppModuleConfigBag ApplicationName="com.ecoui.model.services.oneVueEModel">
+    <AppModuleConfig name="oneVueEModelLocal" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="com.ecoui.model.services.oneVueEModel" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ecouiebsdsDS"/>
+      <Security AppModuleJndiName="com.ecoui.model.services.oneVueEModel"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="oneVueEModelShared" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="com.ecoui.model.services.oneVueEModel" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ecouiebsdsDS"/>
+      <Security AppModuleJndiName="com.ecoui.model.services.oneVueEModel"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+  <AppModuleConfigBag ApplicationName="com.ecoui.model.entities.oneVueEModel">
+    <AppModuleConfig name="oneVueEModelLocal" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="com.ecoui.model.entities.oneVueEModel" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ecouiebsdsDS"/>
+      <Security AppModuleJndiName="com.ecoui.model.entities.oneVueEModel"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="oneVueEModelShared" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="com.ecoui.model.entities.oneVueEModel" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ecouiebsdsDS"/>
+      <Security AppModuleJndiName="com.ecoui.model.entities.oneVueEModel"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

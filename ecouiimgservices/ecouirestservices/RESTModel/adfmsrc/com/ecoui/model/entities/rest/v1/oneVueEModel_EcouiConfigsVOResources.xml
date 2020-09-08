@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.22.48"
+                id="oneVueEModel_EcouiConfigsVOResources" Package="com.ecoui.model.entities.rest.v1"
+                usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="EcouiConfigsVO1" RangeSize="25" DataControl="oneVueEModelDataControl"
+              id="EcouiConfigsVO1Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="EcouiConfigsVO1Iter" id="configsvoapi" AccessorFolder="Always">
+      <nodeDefinition DefName="com.ecoui.model.views.EcouiConfigsVO" Name="com.ecoui.model.views.EcouiConfigsVO"/>
+    </tree>
+  </bindings>
+</pageDefinition>

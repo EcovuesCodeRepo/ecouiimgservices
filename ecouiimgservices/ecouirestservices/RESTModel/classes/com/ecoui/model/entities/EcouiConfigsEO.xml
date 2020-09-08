@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EcouiConfigsEO"
+  Version="12.2.1.22.48"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="ECOUI_CONFIGS"
+  AliasName="EcouiConfigsEO"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="ConfigsId"
+    IsNotNull="true"
+    ColumnName="CONFIGS_ID"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ECOUI_CONFIGS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="ConfigsName"
+    Precision="200"
+    ColumnName="CONFIGS_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ECOUI_CONFIGS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="200"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ConfigsValue"
+    Precision="2000"
+    ColumnName="CONFIGS_VALUE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ECOUI_CONFIGS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="2000"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ConfigsContext"
+    Precision="100"
+    ColumnName="CONFIGS_CONTEXT"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ECOUI_CONFIGS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="100"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="PkConfigId"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PK_CONFIG_ID"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.ecoui.model.entities.EcouiConfigsEO.ConfigsId"/>
+    </AttrArray>
+  </Key>
+</Entity>

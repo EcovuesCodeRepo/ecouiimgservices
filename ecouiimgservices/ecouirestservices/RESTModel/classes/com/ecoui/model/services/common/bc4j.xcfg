@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="com.ecoui.model.services.oneVueModel">
+    <AppModuleConfig name="oneVueModelLocal" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="com.ecoui.model.services.oneVueModel" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ecouidsDS"/>
+      <Security AppModuleJndiName="com.ecoui.model.services.oneVueModel"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="oneVueModelShared" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="com.ecoui.model.services.oneVueModel" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/ecouidsDS"/>
+      <Security AppModuleJndiName="com.ecoui.model.services.oneVueModel"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

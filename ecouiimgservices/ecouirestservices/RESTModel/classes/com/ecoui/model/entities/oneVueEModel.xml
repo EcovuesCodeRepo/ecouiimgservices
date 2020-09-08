@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="oneVueEModel"
+  Version="12.2.1.22.48"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="EcouiConfigsVO1"
+    ViewObjectName="com.ecoui.model.views.EcouiConfigsVO"/>
+</AppModule>
